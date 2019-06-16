@@ -1,4 +1,4 @@
-% Ensure all the *.csv files are in the same folder as this *.m file
+% Ensure all the *.csv files are in the same folder as this *.m file, rather than their original folders
 % This code runs well in MatLab R2019a
 % Here I applied the soft margin SVM with a hybrid kernel
 
