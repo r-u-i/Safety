@@ -41,7 +41,7 @@ for p=1:4
         for i=1:trainRow
             for j=1:trainRow
                 K(i,j)=exp(-(train_data(i,:)*train_data(j,:)'-1)^p);
-	        	H(i,j)=train_label(i)*train_label(j)*K(i,j);
+	        H(i,j)=train_label(i)*train_label(j)*K(i,j);
             end
         end
         if all(eig(K))>=0
