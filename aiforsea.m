@@ -16,12 +16,12 @@ label=readmatrix('part-00000-e9445087-aa0a-433b-a7f6-7f4c19d78ad6-c000.csv');
 n=0;
 for i=1:lRow
     for j=1:fRow
-	    if label(i,1)==feature(j,1)
-		    n=n+1;
-			T(n,:)=feature(j,2:end);
-			L(n,1)=label(i,2);
-		end
+	if label(i,1)==feature(j,1)
+	    n=n+1;
+	    T(n,:)=feature(j,2:end);
+	    L(n,1)=label(i,2);
 	end
+    end
 end
 
 [T,settings]=mapstd(T);
