@@ -1,7 +1,3 @@
-% Ensure all the *.csv files are in the same folder as this *.m file
-% This code runs well in MatLab R2019a
-% Here I applied the soft margin SVM with a hybrid kernel
-
 f0=readmatrix('part-00000-e6120af0-10c2-4248-97c4-81baf4304e5c-c000.csv');
 f1=readmatrix('part-00001-e6120af0-10c2-4248-97c4-81baf4304e5c-c000.csv');
 f2=readmatrix('part-00002-e6120af0-10c2-4248-97c4-81baf4304e5c-c000.csv');
